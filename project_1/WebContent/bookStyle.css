@@ -1,0 +1,142 @@
+@charset "UTF-8";
+
+@import url(http://fonts.googleapis.com/earlyaccess/jejugothic.css);
+@import url('https://fonts.googleapis.com/css?family=Gamja+Flower');
+@import url('https://fonts.googleapis.com/css?family=Sunflower:300&subset=korean');
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+/*전체영역*/
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body{
+	min-width: 1920px;
+}
+p{
+	font-size:30px;
+	position: absolute;
+}
+h4{
+	position: absolute;
+}
+h2{
+	color:#626262;
+}
+/*book*/
+.book-wrapper{
+	position: relative;
+}
+.book{
+	position:absolute;
+	left:460px; top:20px;
+}
+.dollar{
+	position:absolute;
+	left:560px; top:20px;
+	color: #AA1212;
+}
+.first{
+	position: absolute;
+	left:480px; top:80px;
+}
+.book1{
+	position: absolute;
+	left:480px; top:130px;
+	width: 300px; height: 400px;
+}
+.book_1{
+	position: absolute;
+	left: 560px; top:530px;
+}
+
+.second{
+	position: absolute;
+	left:880px; top:80px;
+}
+.book2{
+	position: absolute;
+	left:880px; top:130px;
+	width: 300px; height: 400px;
+}
+.book_2{
+	position: absolute;
+	left: 940px; top:530px;
+}
+
+.third{
+	position: absolute;
+	left:1280px; top:80px;
+}
+.book3{
+	position: absolute;
+	left:1280px; top:130px;
+	width: 300px; height: 400px;
+}
+.book_3{
+	position: absolute;
+	left: 1340px; top:530px;
+}
+
+.forth{
+	position: absolute;
+	left:480px; top:600px;
+}
+.book4{
+	position: absolute;
+	left:480px; top:660px;
+	width: 300px; height:400px;
+}
+.book_4{
+	position: absolute;
+	left: 560px; top:1060px;
+}
+
+.fifth{
+	position: absolute;
+	left:880px; top:600px;
+}
+.book5{
+	position: absolute;
+	left:880px; top:660px;
+	width: 300px; height:400px;
+}
+.book_5{
+	position: absolute;
+	left: 945px; top:1060px;
+}
+
+.sixth{
+	position: absolute;
+	left:1280px; top:600px;
+}
+.book6{
+	position: absolute;
+	left:1280px; top:660px;
+	width: 300px; height:400px;
+}
+.book_6{
+	position: absolute;
+	left: 1350px; top:1060px;
+}
+
+.seventh{
+	position: absolute;
+	left:480px; top:1140px;
+}
+.book7{
+	position: absolute;
+	left:480px; top:1200px;
+	width: 300px; height:400px;
+}
+.book_7{
+	position: absolute;
+	left: 560px; top:1600px;
+}
+/*상세이미지 보여주는 공간*/
+#bigimg{
+	position: fixed;
+	left:1500px;
+	border: 1px solid black;
+}

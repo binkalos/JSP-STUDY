@@ -1,0 +1,27 @@
+.footer {
+	margin-top: 20px;
+	height: 100%;
+	border-top: 1px solid #FFBB00;
+	background-color: #F6F6F6;
+}
+.footer-wrqpper {
+	max-width: 1180px;
+	margin-top: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 10px;
+	width: 100%;
+	display: table;
+}
+.first-wrapper, .second-wrapper, .third-wrapper {
+	float: left;
+	margin-right: 20px;
+}
+.second-wrapper {
+	width: 400px;
+}
+.left-developer, .right-developer, .first-designer {
+	margin-top: 20px;
+	float: left;
+	margin-right: 20px;
+}

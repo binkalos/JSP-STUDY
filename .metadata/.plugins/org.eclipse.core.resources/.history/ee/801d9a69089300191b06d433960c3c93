@@ -1,0 +1,16 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<pre>
+*jsp에서 기본으로 제공되는 내장객체는 9개
+-request,response,out : 입출력과 관련
+-session, application,pageContext : 현재 실행되는 페이지의 외부환경 정보와
+</pre>
+</body>
+</html>

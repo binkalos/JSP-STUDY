@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move &apos;제목 없음.png, 캡처.PNG&apos; to &apos;img&apos;" description="Move 2 resources to &apos;img&apos;" destination="WebContent/img" element1="WebContent/제목 없음.png" element2="WebContent/캡처.PNG" flags="7" id="org.eclipse.ltk.core.refactoring.move.resources" resources="2" stamp="1556760238898" updateReferences="true"/>
+</session>

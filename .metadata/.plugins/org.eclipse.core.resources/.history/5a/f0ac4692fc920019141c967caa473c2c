@@ -1,0 +1,27 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"
+    buffer="8kb"
+    autoFlush="true"
+    %>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+isAutoFlush() : <%=out.isAutoFlush() %><br>
+getBuffersize() : <%=out.getBufferSize() %><br>
+getRemaning() : <%=out.getRemaining() %><br>
+
+<%out.flush(); %><br>
+
+<hr>
+
+<%
+//JspWriter out2 = new JspWriter();
+JspWriter choi = 
+%>
+<% out.print("hi"); %>
+</body>
+</html>

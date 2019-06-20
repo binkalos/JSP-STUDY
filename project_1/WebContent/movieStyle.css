@@ -1,0 +1,170 @@
+@charset "UTF-8";
+
+@import url(http://fonts.googleapis.com/earlyaccess/jejugothic.css);
+@import url('https://fonts.googleapis.com/css?family=Gamja+Flower');
+@import url('https://fonts.googleapis.com/css?family=Sunflower:300&subset=korean');
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+/*전체영역*/
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body{
+	min-width: 1920px;
+}
+p{
+	font-size:30px;
+	position: absolute;
+}
+h4{
+	position: absolute;
+}
+h2{
+	color:#626262;
+}
+/*movie*/
+.movie-wrapper{
+	position: relative;
+}
+.movie{
+	position:absolute;
+	left:460px; top:20px;
+}
+.dollar{
+	position:absolute;
+	left:560px; top:20px;
+	color: #AA1212;
+}
+/*start*/
+.first{
+	position: absolute;
+	left:480px; top:80px;
+}
+.m1{
+	position: absolute;
+	left:480px; top:130px;
+	width: 320px; height: 400px;
+}
+.m_1{
+	position: absolute;
+	left: 560px; top:530px;
+}
+
+.second{
+	position: absolute;
+	left:880px; top:80px;
+}
+.m2{
+	position: absolute;
+	left:880px; top:130px;
+	width: 320px; height: 400px;
+}
+.m_2{
+	position: absolute;
+	left: 940px; top:530px;
+}
+
+.third{
+	position: absolute;
+	left:1280px; top:80px;
+}
+.m3{
+	position: absolute;
+	left:1280px; top:130px;
+	width: 320px; height: 400px;
+}
+.m_3{
+	position: absolute;
+	left: 1340px; top:530px;
+}
+
+.forth{
+	position: absolute;
+	left:480px; top:600px;
+}
+.m4{
+	position: absolute;
+	left:480px; top:660px;
+	width: 320px; height:400px;
+}
+.m_4{
+	position: absolute;
+	left: 560px; top:1060px;
+}
+
+.fifth{
+	position: absolute;
+	left:880px; top:600px;
+}
+.m5{
+	position: absolute;
+	left:880px; top:660px;
+	width: 320px; height:400px;
+}
+.m_5{
+	position: absolute;
+	left: 945px; top:1060px;
+}
+
+.sixth{
+	position: absolute;
+	left:1280px; top:600px;
+}
+.m6{
+	position: absolute;
+	left:1280px; top:660px;
+	width: 320px; height:400px;
+}
+.m_6{
+	position: absolute;
+	left: 1350px; top:1060px;
+}
+/*크기 안바꿔도 됨*/
+.seventh{
+	position: absolute;
+	left:480px; top:1140px;
+}
+.m7{
+	position: absolute;
+	left:480px; top:1200px;
+	width: 300px; height:400px;
+}
+.m_7{
+	position: absolute;
+	left: 560px; top:1600px;
+}
+/*hr*/
+hr{
+	width: 1150px;
+	border:1px solid red;
+	position: absolute;
+	left:480px; top:1700px;
+}
+/*all*/
+.all{
+	position: absolute;
+	left:480px; top:1740px;
+}
+.allm{
+	position: absolute;
+	left:480px; top:1800px;
+	width: 500px; height:400px;
+}
+.all_m{
+	position: absolute;
+	left: 620px; top:2200px;
+}
+.dollar2{
+	position:absolute;
+	size:14px;
+	left:600px; top:1732px;
+	color: #AA1212;
+}
+/*상세이미지 보여주는 공간*/
+#bigimg{
+	position: fixed;
+	left:1500px;
+	border: 1px solid black;
+}

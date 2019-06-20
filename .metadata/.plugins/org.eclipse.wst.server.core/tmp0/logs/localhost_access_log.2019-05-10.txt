@@ -1,0 +1,17 @@
+127.0.0.1 - - [10/May/2019:15:15:17 +0900] "GET / HTTP/1.1" 404 1073
+0:0:0:0:0:0:0:1 - - [10/May/2019:15:15:18 +0900] "GET /IT-show/firstPage.jsp HTTP/1.1" 200 4560
+0:0:0:0:0:0:0:1 - - [10/May/2019:15:15:18 +0900] "GET /IT-show/js/jquery-3.3.1.min.js HTTP/1.1" 200 86927
+0:0:0:0:0:0:0:1 - - [10/May/2019:15:15:18 +0900] "GET /IT-show/firstPageStyle.css HTTP/1.1" 200 7998
+0:0:0:0:0:0:0:1 - - [10/May/2019:15:15:18 +0900] "GET /IT-show/img/imoticon.png HTTP/1.1" 200 76086
+0:0:0:0:0:0:0:1 - - [10/May/2019:15:15:18 +0900] "GET /IT-show/img/foodbox.png HTTP/1.1" 200 45464
+0:0:0:0:0:0:0:1 - - [10/May/2019:15:15:18 +0900] "GET /IT-show/img/logout.png HTTP/1.1" 200 21622
+0:0:0:0:0:0:0:1 - - [10/May/2019:15:15:18 +0900] "GET /IT-show/img/eheqhrl.png HTTP/1.1" 404 1104
+0:0:0:0:0:0:0:1 - - [10/May/2019:15:15:18 +0900] "GET /IT-show/img/gongcha.jpg HTTP/1.1" 404 1104
+0:0:0:0:0:0:0:1 - - [10/May/2019:15:15:28 +0900] "GET /IT-show/firstPage.jsp HTTP/1.1" 200 4560
+0:0:0:0:0:0:0:1 - - [10/May/2019:15:15:28 +0900] "GET /IT-show/js/jquery-3.3.1.min.js HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [10/May/2019:15:15:28 +0900] "GET /IT-show/firstPageStyle.css HTTP/1.1" 200 7998
+0:0:0:0:0:0:0:1 - - [10/May/2019:15:15:28 +0900] "GET /IT-show/img/foodbox.png HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [10/May/2019:15:15:28 +0900] "GET /IT-show/img/logout.png HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [10/May/2019:15:15:28 +0900] "GET /IT-show/img/gongcha.jpg HTTP/1.1" 404 1104
+0:0:0:0:0:0:0:1 - - [10/May/2019:15:15:28 +0900] "GET /IT-show/img/eheqhrl.png HTTP/1.1" 404 1104
+0:0:0:0:0:0:0:1 - - [10/May/2019:15:15:28 +0900] "GET /favicon.ico HTTP/1.1" 404 1084

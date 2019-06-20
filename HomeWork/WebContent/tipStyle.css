@@ -1,0 +1,118 @@
+@charset "UTF-8";
+
+@import url(http://fonts.googleapis.com/earlyaccess/jejugothic.css);
+@import url('https://fonts.googleapis.com/css?family=Gamja+Flower');
+@import url('https://fonts.googleapis.com/css?family=Sunflower:300&subset=korean');
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+/*전체영역*/
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body{
+	min-width: 1920px;
+}
+.himg{
+	width:260px; height:400px;
+	position: absolute;
+	left:410px; top:360px;
+}
+.uniform-wrapper{
+	position: relative;
+	width: 100%;
+}
+p{
+	font-size:30px;
+	position: absolute;
+	font-weight: bolder;
+}
+h4{
+	position: absolute;
+	letter-spacing: 2px;
+	line-height: 185%;
+}
+h2{
+	letter-spacing: 2px;
+	line-height: 185%;
+}
+h5{
+	letter-spacing: 1px;
+	line-height: 180%;
+	color:#626262;
+}
+/*가는법 설명*/
+.howtogo{
+	top: 38%;
+	left:25%;
+}
+.howtogo-wrapper{
+	position: relative;
+	top:80px;
+	left:25%;
+}
+/*기숙사-그리핀도르*/
+.house{
+	top: 90%;
+	left:25%;
+}
+.house-wrapper{
+	position: relative;
+	top:550px;
+	left:25%;
+}
+.teacher-wrapper{
+	position: absolute;
+}
+.teacher{
+	color:#949494;
+	text-align: center;
+}
+.house-information{
+	position:absolute;
+	top:230px;
+}
+.add-information{
+	position:absolute;
+	top:530px;
+	width: 850px; height: 500px;
+}
+.Gryffindor{
+	position:absolute;
+	top:470px;
+	margin-left: 30px;
+}
+/*기숙사-sly*/
+.Sliderin{
+	position:absolute;
+	top:840px;
+	margin-left: 30px;
+}
+.add-information2{
+	position:absolute;
+	top:900px;
+	width: 850px; height: 500px;
+}
+/*기숙사-HUff*/
+.Hufflepuff{
+	position:absolute;
+	top:1125px;
+	margin-left: 30px;
+}
+.add-information3{
+	position:absolute;
+	top:1190px;
+	width: 850px; height: 500px;
+}
+/*기숙사-Raven*/
+.Ravenclaw{
+	position:absolute;
+	top:1410px;
+	margin-left: 30px;
+}
+.add-information4{
+	position:absolute;
+	top:1480px;
+	width: 850px; height: 500px;
+}

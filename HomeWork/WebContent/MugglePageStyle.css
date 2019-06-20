@@ -1,0 +1,134 @@
+@charset "UTF-8";
+
+@import url(http://fonts.googleapis.com/earlyaccess/jejugothic.css);
+@import url('https://fonts.googleapis.com/css?family=Gamja+Flower');
+@import url('https://fonts.googleapis.com/css?family=Sunflower:300&subset=korean');
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+/*전체영역*/
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body{
+	min-width: 1920px;
+}
+.gimg{
+	width:300px; height:400px;
+	position: absolute;
+	left:410px; top:360px;
+}
+.uniform-wrapper{
+	position: relative;
+	width: 100%;
+}
+p{
+	font-size:30px;
+	position: absolute;
+}
+h4{
+	position: absolute;
+}
+/*교복*/
+.uniform{
+	left:700px; top:20px;
+}
+.gcimg{
+	position: absolute;
+	left:700px; top:70px;
+	width: 300px; height: 400px;
+}
+.gch{
+	position: absolute;
+	left: 785px; top:470px;
+}
+/*추가 유니폼*/
+.add-uniform{
+	left:700px; top:530px;
+}
+.ghimg{
+	position: absolute;
+	left: 700px; top:600px;
+	width: 200px; height: 200px;
+}
+.ghh{
+	position: absolute;
+	left: 760px; top:810px;
+}
+.gsimg{
+	position: absolute;
+	left: 1000px; top:560px;
+	width: 200px; height: 250px;
+}
+.gsh{
+	position: absolute;
+	left: 1080px; top:820px;
+}
+.gtieimg{
+	position: absolute;
+	left: 1300px; top:570px;
+	width: 200px; height: 250px;
+}
+.gtieh{
+	position: absolute;
+	left: 1350px; top:820px;
+}
+/*지팡이*/
+.stick{
+	left:700px; top:950px;
+}
+.j1img{
+	position: absolute;
+	left: 700px; top:1000px;
+	width: 300px; height: 250px;
+}
+.j1h{
+	position: absolute;
+	left: 770px; top:1250px;
+}
+.j2img{
+	position: absolute;
+	left: 1030px; top:1000px;
+	width: 300px; height: 250px;
+}
+.j2h{
+	position: absolute;
+	left: 1090px; top:1250px;
+}
+.j3img{
+	position: absolute;
+	left: 1360px; top:1000px;
+	width: 300px; height: 250px;
+}
+.j3h{
+	position: absolute;
+	left: 1420px; top:1250px;
+}
+.j4img{
+	position: absolute;
+	left: 700px; top:1350px;
+	width: 300px; height: 250px;
+}
+.j4h{
+	position: absolute;
+	left: 770px; top:1600px;
+}
+.j5img{
+	position: absolute;
+	left: 1030px; top:1350px;
+	width: 300px; height: 250px;
+}
+.j5h{
+	position: absolute;
+	left: 1090px; top:1600px;
+}
+.j6img{
+	position: absolute;
+	left: 1380px; top:1350px;
+	width: 300px; height: 250px;
+}
+.j6h{
+	position: absolute;
+	left: 1450px; top:1600px;
+}

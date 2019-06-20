@@ -1,0 +1,190 @@
+@charset "UTF-8";
+
+@import url(http://fonts.googleapis.com/earlyaccess/jejugothic.css);
+@import url('https://fonts.googleapis.com/css?family=Gamja+Flower');
+@import url('https://fonts.googleapis.com/css?family=Sunflower:300&subset=korean');
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+/*전체영역*/
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body{
+	min-width: 1920px;
+}
+p{
+	font-size:30px;
+	position: absolute;
+}
+h4{
+	position: absolute;
+}
+h2{
+	color:#626262;
+}
+hr{
+	width: 1150px;
+	border:1px solid #626262;
+	position: absolute;
+}
+/*여름옷*/
+.souvenir-wrapper{
+	position: relative;
+}
+.souvenir{
+	position:absolute;
+	left:460px; top:20px;
+}
+.dollar{
+	position:absolute;
+	left:590px; top:75px;
+	color: #AA1212;
+}
+.summer{
+	position: absolute;
+	left:480px; top:80px;
+}
+.ms1{
+	position: absolute;
+	left:480px; top:130px;
+	width: 300px; height:300px;
+}
+.ms_1{
+	position: absolute;
+	left: 580px; top:450px;
+}
+/*겨울 옷*/
+.winter{
+	position: absolute;
+	left:480px; top:510px;
+}
+.dollar2{
+	position:absolute;
+	left:570px; top:505px;
+	color: #AA1212;
+}
+.ms3{
+	position: absolute;
+	left:480px; top:580px;
+	width: 300px; height:300px;
+}
+.ms_3{
+	position: absolute;
+	left: 560px; top:900px;
+}
+
+.ms4{
+	position: absolute;
+	left:880px; top:580px;
+	width: 300px; height:300px;
+}
+.ms_4{
+	position: absolute;
+	left: 945px; top:900px;
+}
+
+.ms5{
+	position: absolute;
+	left:1280px; top:580px;
+	width: 300px; height: 300px;
+}
+.ms_5{
+	position: absolute;
+	left: 1370px; top:900px;
+}
+
+.ms6{
+	position: absolute;
+	left:480px; top:980px;
+	width: 300px; height: 300px;
+}
+.ms_6{
+	position: absolute;
+	left: 555px; top:1300px;
+}
+
+.ms7{
+	position: absolute;
+	left:880px; top:980px;
+	width: 300px; height:300px;
+}
+.ms_7{
+	position: absolute;
+	left: 955px; top:1300px;
+}
+
+.cup{
+	position:absolute;
+	left:480px; top:1400px;
+}
+.dollar3{
+	position:absolute;
+	left:540px; top:1395px;
+	color: #AA1212;
+}
+.ms8{
+	position: absolute;
+	left:480px; top:1430px;
+	width: 300px; height:300px;
+}
+.ms_8{
+	position: absolute;
+	left: 590px; top:1750px;
+}
+
+.ms9{
+	position: absolute;
+	left:880px; top:1430px;
+	width: 300px; height:300px;
+}
+.ms_9{
+	position: absolute;
+	left: 1010px; top:1750px;
+}
+
+.ms10{
+	position: absolute;
+	left:1280px; top:1450px;
+	width: 300px; height: 280px;
+}
+.ms_10{
+	position: absolute;
+	left: 1400px; top:1750px;
+}
+
+.ms11{
+	position: absolute;
+	left:480px; top:1800px;
+	width: 300px; height:300px;
+}
+.ms_11{
+	position: absolute;
+	left: 600px; top:2130px;
+}
+
+.etc{
+	position: absolute;
+	left:480px; top:2230px;
+}
+.dollar4{
+	position:absolute;
+	left:535px; top:2223px;
+	color: #AA1212;
+}
+.ms2{
+	position: absolute;
+	left:480px; top:2280px;
+	width: 300px; height:300px;
+}
+.ms_2{
+	position: absolute;
+	left: 570px; top:2580px;
+}
+/*상세이미지 보여주는 공간*/
+#bigimg{
+	position: fixed;
+	left:1500px;
+	border: 1px solid black;
+}

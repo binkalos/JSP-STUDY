@@ -1,0 +1,70 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>지도 그리기</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="//dapi.kakao.com/v2/maps/sdk.js?appkey=7e0762dc22ba650124c959074cc14e7f"></script>
+</head>
+<body>
+<!--  
+		<div id="map" style="width:500px;height:400px;"></div>
+		<script src="//dapi.kakao.com/v2/maps/sdk.js?appkey=7e0762dc22ba650124c959074cc14e7f"></script>
+		<script>
+			var container = document.getElementById('map');
+			var options = {
+				center: new daum.maps.LatLng(33.450701, 126.570667),
+				level: 3
+			};
+	
+			var map = new daum.maps.Map(container, options);
+		</script>
+-->		
+		<input type="text" id="searchLoc">
+		<button onclick="searchLocation();">검색</button>
+		<div id="map" style="width:500px; height:400px;"></div>
+</body>
+<script>
+	var ps = new daum.maps.services.Places();
+	//마커를 클릭하면 장소명을 보여주는 인포윈도우
+	var infowindow = new daum.maps.InfoWindow({zIndex:1});
+	
+	//지도 담을 영역의 dom레퍼런스
+	var container = document.getElementById('map');
+	var options = {//지도 생성할 때 필요한 기본옵션
+			center : new daum.maps.LatLng(33.450701,126.570667),//지도 중심좌표
+			level: 3//지도의 레벨(확대,축소정도)
+	};
+	var map = new daum.maps.Map(container,options);
+	
+	function searchLocation(){
+		
+		var loc = $("#searchLoc").val();
+		ps.keywordSearch(loc,placesSearchCB);
+	}
+	function placesSearchCB(data,status,pagination){
+		if(status===daum.maps.services.Status.OK){
+			var counds = new daum.maps.LatLngBounds();
+			
+			for(var i = 0;i<data.length;i++){
+				displayMarker(data[i]);
+				bounds.extend(new daum.maps.LarLng(data[i].y,data[i].x));
+			}
+			map.setBounds(bounds);
+		}
+	}
+	function displayMarker(place){
+		var marker = new daum.maps.Marker({
+			map:map,
+			position:new daum.maps.LatLng(place.y,place.x)
+		});
+		daum.maps.event.addListener(marker,'click',function(){
+			infowindow.setContent('<div style="padding:5px;font-size:12px;">'+place.place_name+'</div>');
+			infowindow.open(map,marker);
+		});
+	}
+</script>
+
+</html>

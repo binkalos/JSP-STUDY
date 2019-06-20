@@ -1,0 +1,182 @@
+<%@page import="java.sql.DriverManager"%>
+<%@page import="java.sql.SQLException"%>
+<%@page import="java.sql.ResultSet"%>
+<%@page import="java.sql.PreparedStatement"%>
+<%@page import="java.sql.Connection"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<link rel="stylesheet" href="fullViewStyle.css" >
+<div id="dim-layer" class="hidden">
+<div class="mask"></div>
+<div class="muktip-modal">
+	<div class="tip-position">
+	<div class="middle">
+	<div class="tip-frame">
+	<div class="tip-body">
+	<div class="top-upper-body">
+		<div class="close"><a class="close-fullview" href="#stay">X</a></div>  
+	
+		<section class="fullview">
+			<div class="fullview-inner-wrapper">
+			
+				<div class="pictures-wrapper">
+				
+					<div class="pictures" data-contents-count="DB count">
+						
+						<div class="conveyer-belt" data-picture-ids="DB picture ID">
+							<figure id="contents-wrapper" class="img-contents-wrapper" style="width:2400px">
+								<img class="content" src="" data-mobile-src="address" width="600" height="600"
+									data-latio="1.0" data-picture-id="DB id">
+							</figure>								
+						</div><!-- conveyer-belt -->
+										
+						<button class="prev">
+							<span class="sprit arrow-left"><img src="img/prev.png" width=50px height=50px></span>
+						</button><!-- prev -->
+											
+						<button class="next">
+							<span class="sprit arrow-right"><img src="img/next.png" width=50px height=50px></span>		
+						</button><!-- next -->		
+															
+					</div><!-- pictures -->
+										
+					<div class="sumnails-wrapper">
+						<div class="sumnails">
+							<figure class="sumnail-border">
+								<img class="sumnail" src="address" width="50" height="50">
+							</figure>
+						</div><!-- sumnails -->
+					</div><!-- sumnails-wrapper -->
+									
+				</div><!-- pictures-wrapper -->
+						
+				<%   
+				    request.setCharacterEncoding("utf-8");
+					String imgPath = null;
+					
+					Connection con = null;
+					PreparedStatement pstmt = null;
+					ResultSet rs = null;
+					
+					String driver = "com.mysql.jdbc.Driver";
+					String url = "jdbc:mysql://localhost:3306/mucktip?serverTimezone=UTC&useSSL=false";
+					String id = "root";
+					String pw = "alflarhkgkrrh1!";
+					
+				
+					try {
+						conn = DriverManager.getConnection(url,user,pw);
+						pstmt = con.prepareStatement("select postid, writer,title, content, imgname, id, profile from post join img on postid = postimgid join user on writer = id where postid = 1;");
+						rs = pstmt.executeQuery();
+						
+						while(rs.next()){		
+				%>		
+						
+				<div class="side-position" id="error_solve">
+					<div class="information-wrapper">
+						<div class="information">
+							<div class="user-card" data-following-status-url="게시자 링크">
+							
+							<div class="profile-picture">
+								<a hrf="db게시자 아이디" target="_blank">
+								<img class="user-profile" src="img/imoticon.png" width="40px" height="40px"> <!-- img(user) in DB -->
+								</a>
+							</div><!-- profile-picture -->
+									
+							<div class="user-information">
+								<div class="clearfix">
+									<a class="nickname" href="유저 아이디" target="_blank">유저 이름</a>
+								</div><!-- clearfix -->
+							</div><!-- user-information -->			
+								
+							</div><!-- user-card -->
+								
+							<div class="scroll-bar-component">
+								<div class="description-wrapper" style="overflow:hidden;">
+									<p class="search-hashing" href="키워드 찾는 주소" target="_blank">#태그한것들</p>
+								</div><!-- discription-wrapper -->
+									
+								<div class="scroll-bar-rail">
+									<div class="bar" style="margin-top:0px;'"></div><!-- bar -->
+								</div><!-- scroll-bar-rail -->
+									
+									
+							</div><!-- scroll-bar-component -->
+							
+						</div><!-- information -->
+						
+						<div class="action"><!-- 좋아요,퍼가기,좋아요 숫자 기능 --></div><!-- action -->
+					
+					</div><!-- information-position -->
+					
+					
+					<div class="comment-wrapper" data-comments-url="디비주소" data-comments-count="DB comments count">
+						
+						<div class="clear-fix">
+							<p class="comments-count">댓글
+								<span class="op-count">디비에 있는 댓글 수</span>
+							</p>
+							<button class="load-comments" data-next-url="(디비에 있는 주소)">더 보기
+						</div><!-- clear-fix -->
+						
+						<div class="comments">
+						<div class="comments-inner-wrapper" style="overflow:hidden;">
+							<ul class="op-comments">
+								<li class="comment" data-id="id" data-autor-id="id"
+													data-author-bio data-author-nickname="댓글 단 user닉네임"
+													data-author-profile-picture-url="사진 누르면 댓글단 user페이지로">
+								
+								<div class="commenter-picture">
+									<a href="댓글단user아이디" target="_blank">
+										<img src="img/imoticon.png" width="30" height="30">
+									</a>
+								</div><!-- commenter-picture-left -->
+								
+								<div class="delete-button-wrapper"></div>
+								
+								<div class="remaining-width">
+									<p class="comment-body-wrapper remaining-width">
+										<a class="commenter" href="댓글단 user아이디" target="-blank">댓글 userid</a>
+										<span class="comment-body">DB 댓글 내용</span>
+									</p>
+									<time datetime="댓글단 날짜" title="댓글쓴날짜">댓글쓴날짜</time>
+								</div><!-- remaining-width -->
+								
+								</li><!-- comment -->
+							</ul><!-- op-comments -->
+						</div><!-- comments-inner-wrapper -->
+						
+						<div class="scroll-bar-rail">
+							<div class="bar" style="margin-top:0px;"></div>
+						</div><!-- scroll-bar-rail -->
+						</div><!-- comments -->
+						
+						<div class="comment-input-field">
+							<ul class="mentionable-users"></ul>
+							<label class="input-group">
+								<div class="input-wrapper">
+									<textarea class="input" placeholder="댓글을 남기세요,,," tabindex="1"></textarea>
+									<p class="markup-field"></p>
+									<textarea class="textarea-mirror" style="font-size:14px; 
+												width:293px; height:16px;"></textarea>
+								</div><!-- input-wrapper -->
+							</label>
+						</div><!-- comment-input-field -->
+						
+					</div><!-- comment-wrapper -->
+				</div><!-- side-position -->
+						
+				<div class="vertical-line"></div>			
+	
+							
+			</div><!-- fullview-inner-wrapper -->
+		</section><!-- fillview -->	
+					
+	</div><!-- top-upper-body -->
+	</div><!-- tip-body -->
+	</div><!-- tip-frame -->
+	</div><!-- middle -->
+	</div><!-- tip-position -->
+
+</div><!-- dim-layer  -->
+</div><!-- muktip-modal -->

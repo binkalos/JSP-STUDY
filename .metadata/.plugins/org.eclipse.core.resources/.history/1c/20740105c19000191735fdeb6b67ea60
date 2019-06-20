@@ -1,0 +1,45 @@
+// 생성자
+function StoreData(sname, lat, lng, menu){
+    this.sname = sname; // 가게 이름
+    this.lat = lat; // 위도
+    this.lng = lng; // 경도
+    this.menuList = menu; // 메뉴
+}
+ 
+ 
+StoreData.prototype.getLatLng = function() { // StoreDate생성자에 위도 경도(getLatLng)를 공유
+    return new daum.maps.LatLng(this.lat, this.lng); //
+};
+ 
+ 
+var storeManager = (function () {
+ 
+    //3. 메뉴 데이터 값 입력
+    var data = null;
+ 
+    //4. getAllMenus로 메뉴 데이터 값을 반환 시켜주기 위해
+    var getAllData = function (callback, url) {
+        
+        console.log("Start getAllStore");
+ 
+        $.ajax({ //ajax 실행
+            url: url,
+            dataType: "json",
+            success: function (result) { //result = data.json 메뉴 데이터
+                console.log("result = " + result);
+                data = result; // null을 data.json 메뉴데이터로 바꿔준다
+                if (callback) {
+                    callback(result);
+                }
+            }
+        });
+ 
+        console.log("Exit getAllMenus");
+    };
+    return{
+        getAllData : getAllData
+    };
+})();
+ 
+
+

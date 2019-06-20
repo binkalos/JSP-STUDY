@@ -1,0 +1,98 @@
+@charset "UTF-8";
+
+/*전체영역*/
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body{
+	min-width: 1920px;
+}
+.himg{
+	width:260px; height:400px;
+	position: absolute;
+	left:410px; top:360px;
+}
+.uniform-wrapper{
+	position: relative;
+	width: 100%;
+}
+p{
+	font-size:30px;
+	position: absolute;
+	font-weight: bolder;
+}
+h4{
+	position: absolute;
+	letter-spacing: 2px;
+	line-height: 185%;
+}
+h2{
+	letter-spacing: 2px;
+	line-height: 185%;
+	color:#626262;
+}
+h5{
+	letter-spacing: 1px;
+	line-height: 180%;
+	color:#626262;
+}
+img{
+	width: 400px; height:500px;
+}
+.character{
+	top: 38%;
+	left:25%;
+}
+/*harry*/
+.harry-wrapper{
+	position: relative;
+	top:80px;
+	left:25%;
+}
+.harry-information{
+	position: absolute;
+	top:150px;
+	left:450px;
+}
+/*roan*/
+.roan-wrapper{
+	position: relative;
+	top:120px;
+	left:50%;
+}
+.roanimg{
+	position: absolute;
+	top:80px;
+	left:250px;
+	width: 450px;
+}
+.roan-information{
+	position: absolute;
+	top:260px;
+	left:-400px;
+}
+/*harremion*/
+.harrmion-wrapper{
+	position: relative;
+	top:680px;
+	left:25%;
+}
+.harrmion-information{
+	position: absolute;
+	top:240px;
+	left:450px;
+}
+/*nextpage*/
+.next-wrapper{
+	position: relative;
+}
+.next{
+	width: 350px;
+	height:350px;
+	position:absolute;
+	top:700px;
+	left:1200px;
+	
+}

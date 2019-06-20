@@ -1,0 +1,454 @@
+#dim-layer {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 100;
+}
+
+.mask {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #000;
+	opacity: .5;
+	filter: alpha(opacity=50);
+}
+
+.muktip-modal {
+	opacity: 1; /*투명도*/
+	display: block;
+	position: fixed; /*고정*/
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+}
+.tip-position{
+	pointer-events:auto;/*비활성화된 이벤트를 다시 기본 기능을 하도록 되돌린다.*/
+	position: relative;/*이 친구가 absolute의 부모*/
+	z-index: 1;/*요소 겹칠때 태그에 우선순위 주는거 값이 높을 수록 더 위로 올라옴*/
+	height: 100%;
+	display: table;/*위치를 테이블로 보이도록한다*/
+	overflow: hidden;/*넘어간 부분 안보여줘*/
+	text-align: center;
+	margin-left: auto; margin-right: auto; 
+}
+.close-fullview {
+	color: white;
+	text-decoration: none;
+}
+.middle{
+	display: table-cell;/*다른요소를 tr,td 속성으로 바꾸어줌 vertical-align:middle 과 같이 사용해주면 세로 정렬이 됨*/
+	vertical-align: middle;
+	pointer-events:auto;
+}
+.tip-frame{
+	position: relative;
+	width: 955px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	border-radius: 6px;
+}
+.top-upper-body{
+	background-color: #F7F8F9;
+	position: relative;
+}
+.close {
+	position: absolute;
+	right:0;
+	top:-30px;
+	float: right;
+	border-radius: 50%;
+	border: 1px solid white;
+	width: 20px;
+	height: 20px;
+}
+section {
+	display: block;
+}
+
+.fullview{
+	text-align: left;
+	padding-top: 0;
+	min-height:calc(100vh - 60px - 520px);
+	clear: both;/*float의 영향을 받지 않겠다는 뜻*/
+}
+.fullview-inner-wrapper {
+	margin:0;
+	border-radius:6px;
+	position: relative;
+	width: 600px;
+	background-color: white;
+	border-color: #E8EBED;
+	border-style: solid;
+	border-width: 1px;
+	padding-right: 355px;
+	display: table;
+}
+.pictures-wrapper{
+	max-width: 600px;
+	border-bottom: 1px solid #EBEBED;
+	float: left;
+	text-align: left;
+}
+.pictures{
+	border-radius: 6px 0 0;
+	position: relative;
+	overflow: hidden;
+}
+.conveyer-belt{
+	overflow-x:hidden; 
+	overflow-y:hidden; 
+}
+.img-contents-wrapper {
+	background-color: black;
+}
+.content{
+	cursor: zoom-in;
+	vertical-align: middle;
+}
+img{border:0;}
+img[Attributes Style]{
+	width: 600px; height: 600px;
+}
+.prev{
+	left: 0;
+	cursor: w-resize;
+	-webkit-transition:opacity 0.3s;
+	opacity: 0;
+	position: absolute;
+	top: 0; bottom: 0;
+	width: 76px;
+	border: 0;
+	background-color: transparent;
+	cursor: pointer;
+	outline: none;
+}
+.button{
+	color: #26282B;
+	font-family: "Helvetica","Arial","Apple SD Gothic Neo","Nanum Gothic","Malgun Gothic","Dotumche","Dotum",sans-serif;
+	line-height: 1.3;
+	padding: 1px 6px;
+	align-items: flex-start;
+	text-align: center;
+	cursor: default;
+	color: buttontext;
+	background-color: buttonface;
+	box-sizing: border-box;
+	padding: 2px 6px 3px;
+	border: 2px outset buttonface;
+	text-rendering:auto;
+	letter-spacing: normal; word-spacing: normal;
+	text-transform: none; text-indent: 0px; text-shadow: none;
+	display: inline-block;
+	font: 400 13.3333px Arial;
+	-webkit-appearance:button;
+}
+.sprit{
+	display: inline-block;
+	background-image:url("왼쪽 화살표");
+	background-repeat: no-repeat;
+	vertical-align: middle;
+	zoom:1;
+	cursor: w-resize; 
+}
+.next{
+	right: 0px; cursor: e-resize;
+	-webkit-transition:opacity 0.3s;
+	transition:opacity 0.3s;
+	opacity: 0; position: absolute;
+	top: 0; bottom: 0; width: 76px; border: 0;
+	background-color: transparent; outline: none;
+}
+.sumnails-wrapper{
+	padding-top:15px; padding-bottom: 15px; width: 100%; 
+}
+.sumnails{
+	display: table;
+	margin-left: auto;
+	margin-right: auto;
+}
+.sumnail-border{
+	border-color:green;
+	-webkit-border-radius:6px;
+	moz-border-radius:6px;
+	border-radius: 6px;
+	position: relative;
+	margin-left:6px;
+	width: 42px;
+	height: 42px;
+	border: 3px solid transparent;
+	overflow: hidden;
+}
+.sumnail-border:first-child {
+	margin-left: 0;
+}
+.side-position{
+	margin-right: -355px; 
+	padding-left: 20px; padding-top: 20px; padding-right: 20px; padding-bottom:15px;
+	width: 355px;
+	float: right;
+}
+.information-wrapper:first-child {
+	margin-top: 0;
+}
+.information-wrapper{
+	border-radius: 6px;
+	margin-bottom: 15px;
+}
+.information{
+	border-radius: 6px;
+	padding:12px;
+	background-color: green;
+	border: 1px solid #C9CDD2;
+}
+.profile-picture{
+	width: 40px; height: 40px;
+	border-radius: 50%;
+	overflow: hidden;
+	float: left;
+}
+img{
+	display: blick;
+	border: 0;
+}
+.user-information{
+	margin-top: 4px;
+	padding-left: 10px;
+	overflow:hidden;
+	display: block;
+}
+.nickname{
+	margin-top: 0; margin-right: 4px;
+	max-width: 170px;
+	font-size: 14px;
+	color: red;
+	font-weight: blod;
+	text-decoration: none;
+	display: block;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.scroll-bar-component{position: relative;}
+.description-wrapper{
+	max-height: 180px;
+	overflow-y:auto;
+	font-size: 13px;
+	margin-top: 12px; 
+}
+.description{white-space: pre-wrap;}
+.search-hashing{color: red; text-decoration: none;}
+.scroll-bar-rail{	
+	ImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    -moz-opacity: 0;
+    opacity: 0;
+    -webkit-transition: opacity 0.5s,width 0.3s;
+    -moz-transition: opacity 0.5s,width 0.3s;
+    -ms-transition: opacity 0.5s,width 0.3s;
+    -o-transition: opacity 0.5s,width 0.3s;
+    transition: opacity 0.5s,width 0.3s;
+    position: absolute;
+    top: 0;
+    right: 2px;
+    bottom: 0;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 7px;
+}
+.bar{
+	border-radius: 10px;
+	width: 100%;
+	background-color: black;
+}
+.comment-input-field{
+	position: relative;
+	padding-top:10px;
+	border-top: black solid 1px;
+}
+ul{list-style: none;}
+.action {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    min-height: 34px;
+    border-bottom-color: #C9CDD2;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+}
+.comment-wrapper {
+    padding-top: 12px;
+}
+.clear-fix {
+	display: table;
+	width: 315px;
+}
+.comments-count {
+	margin: 0;
+    color: #72787F;
+    font-size: 14px;
+    font-weight: bold;
+    float: left;
+}
+.load-comments {
+    background-color: transparent;
+    border-width: 0;
+    color: #047acc;
+    cursor: pointer;
+    font-size: 12px;
+    outline: none;
+    text-decoration: underline;
+    float: right;
+}
+.comments {
+    position: relative;
+    margin-top: 10px;
+}
+.comments-inner-wrapper {
+    max-height: 331px;
+    overflow: auto;
+}
+.comment {
+	padding-bottom: 10px;
+}
+ .commenter-picture {
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    overflow: hidden;
+    float: left;
+    display: block;
+}
+.delete-button-wrapper{
+	float: right;
+}
+.remaining-width{
+	display: block;
+    overflow: hidden;
+}
+.comment-body-wrapper {
+    line-height: 1;
+}
+.remaining-width{
+	display: block;
+    overflow: hidden;
+}
+.comment-body{
+    font-size: 12px;
+    white-space: pre-wrap;
+}
+.comment-input-field {
+    padding-top: 10px;
+    border-top-color: #C9CDD2;
+    border-top-style: solid;
+    border-top-width: 1px;
+}
+time {
+	font-size: 12px;
+    color: #9EA4AA;
+}
+.mentionable-users {
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    position: absolute;
+    bottom: 100%;
+    width: 100%;
+    max-height: 200px;
+    margin-bottom: -7px;
+    background-color: white;
+    overflow: auto;
+    border-color: #E8EBED;
+    border-style: solid;
+    border-width: 1px;
+    display: none;
+}
+.input-group {
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    display: block;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    border-color: #C9CDD2;
+    border-style: solid;
+    border-width: 1px;
+    background-color: white;
+    line-height: 1;
+}
+.input-group .input-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+.markup-field {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: transparent;
+    font-size: 14px;
+    line-height: 1.3;
+    cursor: text;
+    pointer-events: none;
+    word-break: keep-all;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+}
+.textarea-mirror {
+    position: absolute;
+    top: -100%;
+    left: -100%;
+    border-width: 0;
+    visibility: hidden;
+}
+ .vertical-line {
+    position: absolute;
+    right: 355px;
+    top: 0;
+    bottom: 0;
+    border-right-color: #E8EBED;
+    border-right-style: solid;
+    border-right-width: 1px;
+}
+.input{
+	position: relative;
+    background-color: transparent;
+    word-break: keep-all;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    height: 16px;
+    resize: none;
+    width: 100%;
+    font-size: 14px;
+    border: 0;
+    outline: none;
+}
+textarea{
+	color: #26282B;
+    font-family: "Helvetica", "Arial", "Apple SD Gothic Neo", "Nanum Gothic", "Malgun Gothic", "DotumChe", "Dotum", sans-serif;
+    line-height: 1.3;
+}
+.commenter {
+    color: #26282B;
+    font-size: 12px;
+    white-space: pre-wrap;
+    font-weight: bold;
+    text-decoration: none;
+}
+/*오른쪽 왼쪽 버튼div에 hover하면 버튼 생기게 하기*/
+.pictures:hover .prev, .pictures:hover .next{
+	opacity: 1;
+}

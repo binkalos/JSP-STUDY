@@ -1,0 +1,106 @@
+@charset "UTF-8";
+
+/*전체영역*/
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body{
+	min-width: 1920px;
+}
+.himg{
+	width:260px; height:400px;
+	position: absolute;
+	left:410px; top:360px;
+}
+.uniform-wrapper{
+	position: relative;
+	width: 100%;
+}
+p{
+	font-size:30px;
+	position: absolute;
+	font-weight: bolder;
+}
+h4{
+	position: absolute;
+	letter-spacing: 2px;
+	line-height: 185%;
+}
+h2{
+	letter-spacing: 2px;
+	line-height: 185%;
+	color:#626262;
+}
+h5{
+	letter-spacing: 1px;
+	line-height: 180%;
+	color:#626262;
+}
+img{
+	width: 400px; height:500px;
+}
+.character{
+	top: 38%;
+	left:25%;
+}
+/*draco*/
+.draco-wrapper{
+	position: relative;
+	top:80px;
+	left:25%;
+}
+.draco-information{
+	position: absolute;
+	top:150px;
+	left:450px;
+}
+/*teacher1*/
+.teacher1-wrapper{
+	position: relative;
+	top:100px;
+	left:50%;
+}
+.teacher1{
+	position: absolute;
+	top:80px;
+	left:250px;
+	width: 450px;
+}
+.teacher1-information{
+	position: absolute;
+	top:260px;
+	left:-200px;
+}
+/*teacher2*/
+.teacher2-wrapper{
+	position: relative;
+	top:650px;
+	left:25%;
+}
+.teacher2{
+	width: 500px;
+}
+.teacher2-information{
+	position: absolute;
+	top:300px;
+	left:550px;
+}
+/*teacher3*/
+.teacher3-wrapper{
+	position: relative;
+	top:680px;
+	left:50%;
+}
+.teacher3{
+	position: absolute;
+	top:80px;
+	left:250px;
+	width: 450px;
+}
+.teacher3-information{
+	position: absolute;
+	top:300px;
+	left:-200px;
+}

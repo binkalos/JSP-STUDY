@@ -1,0 +1,8 @@
+0:0:0:0:0:0:0:1 - - [17/May/2019:00:15:32 +0900] "GET /IT-show/firstPage.jsp HTTP/1.1" 200 6566
+0:0:0:0:0:0:0:1 - - [17/May/2019:00:15:32 +0900] "GET /IT-show/firstPageStyle.css HTTP/1.1" 200 8326
+0:0:0:0:0:0:0:1 - - [17/May/2019:00:15:32 +0900] "GET /IT-show/img/searchIcon.png HTTP/1.1" 404 1107
+0:0:0:0:0:0:0:1 - - [17/May/2019:00:15:32 +0900] "GET /IT-show/img/gongcha.jpg HTTP/1.1" 200 72219
+0:0:0:0:0:0:0:1 - - [17/May/2019:00:15:32 +0900] "GET /IT-show/img/chinanoodle.jpg HTTP/1.1" 404 1108
+0:0:0:0:0:0:0:1 - - [17/May/2019:00:15:58 +0900] "GET /IT-show/loginPage.jsp HTTP/1.1" 404 1098
+0:0:0:0:0:0:0:1 - - [17/May/2019:00:16:01 +0900] "GET /IT-show/img/searchIcon.png HTTP/1.1" 404 1107
+0:0:0:0:0:0:0:1 - - [17/May/2019:00:16:01 +0900] "GET /IT-show/img/chinanoodle.jpg HTTP/1.1" 404 1108

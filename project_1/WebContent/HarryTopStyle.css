@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+*{
+	padding: 0; margin: 0;
+}
+div{display: block;}
+a{cursolr:pointer;}
+.top-wrapper{
+	position: relative;
+	height: 8.75rem;
+}
+.logo{
+	position: absolute;
+	left: 50%; right: 50%;
+	transform:translated3d(-50%,-50%,0);
+	width: 18.875rem;
+}

@@ -1,0 +1,60 @@
+@charset "UTF-8";
+
+@import url(http://fonts.googleapis.com/earlyaccess/jejugothic.css);
+@import url('https://fonts.googleapis.com/css?family=Gamja+Flower');
+@import url('https://fonts.googleapis.com/css?family=Sunflower:300&subset=korean');
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+/*sub-menu 영역*/
+.show {
+	margin-left: auto;
+	margin-right: auto;
+	padding: 10px;
+	max-width: 1040px;
+	width: 100%;
+	display: block;
+	height: 50px;
+	border-bottom: solid 1px #BDBDBD;
+}
+/*
+#sub-menu.selected {
+	position: absolute;
+	top: 0;
+	left: 12px;
+	width: 100%;
+	line-height: 49px;
+	content: attr(data-text);
+	color: #BDBDBD;
+	cursor: pointer;
+	font-size: 14px;
+	font-weight: bold;
+}
+*/
+.sub-menu {
+	display: inline-block;
+	margin-left: 12px;
+	font-size: 18px;
+	color: #BDBDBD;
+	line-height: 49px;
+	content: attr(data-text);
+	cursor: pointer;
+}
+
+.sub-contents-wrapper {
+	list-style: none;
+}
+
+/*목록 스타일*/
+.sub-contents-wrapper a {
+	text-decoration: none;
+	color: #26282B;
+}
+
+.selected {
+	font-weight: bold;
+}
+
+.sub-menu:hover {
+	font-weight: bold;
+	color: black;
+}

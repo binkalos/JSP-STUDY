@@ -1,0 +1,68 @@
+@charset "UTF-8";
+
+@import url(http://fonts.googleapis.com/earlyaccess/jejugothic.css);
+@import url('https://fonts.googleapis.com/css?family=Gamja+Flower');
+@import url('https://fonts.googleapis.com/css?family=Sunflower:300&subset=korean');
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+/*전체영역*/
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body{
+	min-width: 1920px;
+}
+p{
+	font-size:30px;
+	position: absolute;
+}
+h4{
+	position: absolute;
+}
+
+/*nextpage*/
+.next-wrapper{
+	position: relative;
+}
+.next{
+	width: 350px;
+	height:350px;
+	position:absolute;
+	top:-300px;
+	left:790px;
+	
+}
+/*question*/
+.center{
+	position: relative;
+	width: 800px; height: 600px;
+}
+#q{
+	position: absolute;
+	left: 900px; top:100px;
+}
+h2{
+	color:#626262;
+	position:absolute;
+	left:800px; top:200px;	
+	width: 600px; height: 200px;
+}
+h4{
+	color:#626262;
+	position:absolute;
+	width: 800px; height: 500px;
+}
+.radio{
+	position:absolute;
+	width:500px; height:600px;
+	left:880px; top:260px;
+	font-size: 20px;
+}
+.radio2{
+	position:absolute;
+	width:500px; height:600px;
+	left:880px; top:260px;
+	font-size: 20px;
+}
